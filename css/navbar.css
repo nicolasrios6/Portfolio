@@ -1,0 +1,155 @@
+.topheader {
+    /* box-shadow: 0 4px 5px #e5e5e5; */
+    position: fixed;
+    background-color: var(--theme-color);
+    left: 0;
+    top: 0;
+    width: 100%;
+    color: var(--light);
+    background-color: var(--dark);
+}
+
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* LOGO */
+
+.logo{ 
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* .logo span {
+    color: var(--base-color);
+} */
+
+/* MENU */
+
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    padding: 0 15px;
+}
+
+.menu a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 50px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.menu a::after {
+    content: '';
+    background-color: var(--base-color);
+    position: absolute;
+    left: 0;
+    top: calc(100% + 4px);
+    width: 100%;
+    height: 3px;
+
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.menu a.selected::after,
+.menu a:hover::after {
+    opacity: 0.8;
+}
+
+.menu a:hover {
+    color: var(--base-color);
+}
+
+.open-menu, .close-menu {
+    display: none;
+}
+
+@media (max-width:950px) {
+
+    /* MENU */
+
+    .menu {
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        align-items: center;
+        background-color: var(--dark);
+        height: 100%;
+        overflow-y: auto;
+
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s;
+    }
+
+    .menu li {
+        padding: 0;
+    }
+
+    .menu a {
+        color: var(--light);
+        line-height: 70px;
+        font-size: 25px;
+    }
+
+    .open-menu, .close-menu {
+        display: block;
+    }
+
+    .open-menu {
+        background-color: var(--base-color);
+    }
+
+
+    .open-menu,.close-menu {
+        border: none;
+        padding: .5rem;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+
+    .open-menu img, .close-menu img {
+        width: 1.3rem;
+        color: var(--light);
+    }
+
+    .close-menu {
+        margin-top: 1rem;
+        background-color: var(--base-color);
+    }
+
+    .menu_opened {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .menu a::after {
+        content: none;
+        
+    }
+    
+    .menu a:hover,
+    .menu a.selected {
+        color: var(--base-color);
+    }
+}
+
+
+
+

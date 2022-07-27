@@ -1,0 +1,45 @@
+.contact {
+    background-color: var(--base-color);
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 40px;
+}
+
+.contact_title {
+    font-size: 40px;
+    color: var(--light);
+}
+
+.contact_mail { 
+    font-size: 20px;
+    color: var(--light);
+}
+
+.contact_icons {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.contact_icons li {
+    padding-inline: 10px;
+}
+
+.contact_icons i {
+    font-size: 2rem;
+    color: var(--light);
+}
+
+.contact_icons i:hover {
+    color: var(--dark);
+}
+
+.footer_copy {
+    font-size: 18px;
+    color: var(--light);
+    margin-bottom: 0;
+}

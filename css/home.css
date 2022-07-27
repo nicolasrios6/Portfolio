@@ -1,0 +1,162 @@
+.home {
+    text-align: center;
+}
+
+.home_info {
+    margin-bottom: 3rem;
+}
+
+.home_title {
+    font-size: 35px;
+    margin: 0;
+}
+
+.home_title span {
+    color: var(--base-color);
+}
+
+/* .home_details {
+    font-size: 18px;
+} */
+
+.contact_icons_home {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.contact_icons_home li {
+    padding-inline: 10px;
+}
+
+.contact_icons_home i {
+    font-size: 2rem;
+    transition: 1s ease;
+}
+
+.contact_icons_home i:hover {
+    color: var(--base-color);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+
+.home_btn {
+    font-size: 20px;
+    border: none;
+    background-color: var(--base-color);
+    color: var(--light);
+    padding: .3em .7em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+/* .home_btn a{
+    color: var(--light);
+} */
+
+.home_btn:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+
+
+.home_img {
+    width: 80%;
+    max-width: 350px;
+}
+
+/* .darkmode {
+    display: flex;
+    background-color: var(--dark);
+    background-color: transparent;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 45px;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+} */
+
+/* .darkmode button {
+    background-color: transparent;
+    border: none;
+
+}
+
+.darkmode i {
+    color: var(--light);
+    font-size: 28px;
+} */
+
+@media (min-width: 950px) {
+    .home {
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        max-width: 1300px;
+        margin: 0 auto;
+        margin-top: 6rem;
+    }
+    
+    .home_info {
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .home_title {
+        font-size: 60px;
+    }
+    
+    /* .home_details {
+        font-size: 25px;
+    } */
+
+    .contact_icons_home {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: start;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+    
+    .contact_icons_home li {
+        padding-inline: 10px;
+    }
+    
+    .contact_icons_home i {
+        font-size: 2rem;
+        transition: 1s ease;
+    }
+    
+    .contact_icons_home i:hover {
+        color: var(--base-color);
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+    }
+
+    .home_btn {
+        width: 10rem;
+    }
+
+    .home_img_section {
+        width: 50%;
+        text-align: center;
+    }
+
+    .home_img {
+        width: 100%;
+        max-width: 500px;
+    }
+
+}
