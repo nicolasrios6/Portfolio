@@ -1,0 +1,135 @@
+.projects_container {
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.titleP {
+    font-size: 30px;
+    margin-bottom: 8rem;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    border: 3px solid var(--base-color);
+    width: 24rem;
+    border-radius: 10px;
+    margin-inline: 20px;
+}
+
+.card_img {
+    width: 100%;
+    /* height: 185px; */
+    /* overflow: hidden; */
+}
+
+.card_img .img_calc {
+    border-radius: 7px 7px 0 0;
+}
+
+/* .card_img .img_todolist {
+    height: 100%;
+} */
+
+.card_img img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.card_detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--dark);
+}
+
+.card_title {
+    font-size: 24px;
+    margin-bottom: .2rem;
+    color: var(--light);
+}
+
+.card_technologies {
+    font-size: 18px;
+    margin: 3rem;
+    color:var(--light);
+}
+
+.card_icons {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+.card_icons li {
+    padding-inline: 10px;
+}
+
+.card_icons i {
+    font-size: 2rem;
+    color:var(--light);
+
+}
+
+.card_icons i:hover {
+    color: var(--base-color);
+}
+
+.vermas-btn {
+    width: 8rem;
+    font-size: 1.5rem;
+    border: none;
+    background-color: var(--base-color);
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s ease;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+.vermas-btn a {
+    color: var(--light);
+}
+
+.vermas-btn:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+
+@media (max-width: 950px) {
+    .projects_container {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
+    .titleP {
+        font-size: 30px;
+        text-align: center;
+        margin-top:3rem;
+        margin-bottom: 2rem;
+    }
+    
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card {
+        width: 18rem;
+        margin-block: 20px;
+    }
+
+    .vermas-btn {
+        margin-top: 2rem;
+    }
+}

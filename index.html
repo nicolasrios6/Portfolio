@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon1.png" type="image/x-icon">
+    <title>Nicolás Ríos | Frontend Developer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/about-skills.css">
+    <link rel="stylesheet" href="./css/projects.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+    <script defer src="./js/app.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="topheader">
+        <nav class="topnav">
+            <a href="#" class="logo">Nicolás <span>Ríos</span></a>
+            <button class="open-menu" aria-label="Abrir menú">
+                <img src="./img/hamburger-icon.svg" alt="abrir menú">
+            </button>
+            <ul class="menu ">
+                <button class="close-menu" aria-label="Cerrar menú">
+                    <img src="./img/close-icon.svg" alt="cerrar menú">
+                </button>
+                <li><a href="#home" class="selected">Home</a></li>
+                <li><a href="#about">Sobre Mi</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <div class="horizontal-padding vertical-padding" id="home">
+        <section class="home">
+            <div class="home_info">
+                <h1 class="home_title">Frontend <br/> <span>Developer</span></h1>
+                <ul class="contact_icons_home">
+                    <li><a href="https://github.com/nicolasrios6" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/nicolasrios6/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://twitter.com/NicoRios027" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                </ul>
+                <!-- <p class="home_details">Apasionado por el mundo del desarrollo </p> -->
+                <a href="./Nicolás Ríos CV.pdf" target="_blank"><button class="home_btn">Ver CV</button></a>
+                <!-- <button class="home_btn"></button> -->
+            </div>
+            <div class="home_img_section">
+                <img class="home_img" src="./img/dev.svg" alt="programador">
+            </div>
+        </section>
+    </div>
+    
+
+    <!-- Sobre Mi/Skills -->
+    <div class="horizontal-padding vertical-padding" id="about">
+        <div class="container_Ab-Sk" >
+            <section class="about" >
+                <h2 class="about_title">Sobre mi</h2>
+                <p class="about_details">Mi nombre es Nicolás Ríos, tengo 22 años y soy de Mendoza, Argentina. Me inicié en el mundo de la programación en 2021 de forma autodidacta. Mi objetivo es crecer personal y profesionalmente como Desarrollador Frontend. Me gusta trabajar en equipo y aprender nuevas habilidades y tecnologías.</p>
+            </section>
+            <section class="skills">
+                <h2 class="skills_title">Habilidades</h2>
+                <ul class="skills_list">
+                    <li class="skills_skill">HTML</li>
+                    <li class="skills_skill">CSS</li>
+                    <li class="skills_skill">Javascript</li>
+                    <li class="skills_skill">React JS</li>
+                    <li class="skills_skill">SASS</li>
+                    <li class="skills_skill">Bootstrap</li>
+                    <li class="skills_skill">Material UI</li>
+                    <li class="skills_skill">GIT</li>
+                    <li class="skills_skill">Firebase</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <!-- Proyectos -->
+    <div class="horizontal-padding vertical-padding" id="projects">
+        <div class="projects_container" >
+        <section class="projects_title">
+            <h2 class="titleP">Proyectos</h2>
+        </section>
+
+        <section class="cards">
+            <div class="card">
+                <div class="card_img">
+                    <img src="./img/ecommerce.png" alt="img">
+                </div>
+                
+                <div class="card_detail">
+                    <h3 class="card_title">Ecommerce</h3>
+                    <p class="card_technologies">
+                        React JS + SASS
+                    </p>
+
+                    <ul class="card_icons">
+                        <li><a href="https://github.com/nicolasrios6/ecommerce-react" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-globe"></i></a></i></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card_img">
+                    <img class="img_todolist" src="./img/portfolio.png" alt="img">
+                </div>
+                
+                <div class="card_detail">
+                    <h3 class="card_title">Portfolio</h3>
+                    <p class="card_technologies">
+                        Javascript + CSS
+                    </p>
+
+                    <ul class="card_icons">
+                        <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-globe"></i></a></i></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card_img">
+                    <img class="img_calc" src="./img/calculadora.png" alt="img">
+                </div>
+                
+                <div class="card_detail">
+                    <h3 class="card_title">Calculadora</h3>
+                    <p class="card_technologies">
+                        Javascript + CSS
+                    </p>
+
+                    <ul class="card_icons">
+                        <li><a href="https://github.com/nicolasrios6/calculadorajs" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href="https://nicolasrios6.github.io/calculadorajs/" target="_blank"><i class="fa-solid fa-globe"></i></a></i></li>
+                    </ul>
+                </div>
+            </div>
+
+            
+        </section>
+        <button class="vermas-btn"><a href="https://github.com/nicolasrios6?tab=repositories" target="_blank">Ver mas</a></button>
+    </div>
+    </div>
+
+    <!-- Contacto -->
+    <div class="horizontal-padding vertical-padding contact" id="contact">
+        <section >
+            <h2 class="contact_title">Contacto</h2>
+            <p class="contact_mail">Mandame un email: riosnicolas618@gmail.com</p>
+
+            <ul class="contact_icons">
+                <li><a href="https://github.com/nicolasrios6" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/nicolasrios6/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://twitter.com/NicoRios027" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+
+            <p class="footer_copy">2022 © Nicolás Ríos</p>
+            
+        </section>
+    </div>
+
+</body>
+</html>

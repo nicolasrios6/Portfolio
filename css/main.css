@@ -1,0 +1,80 @@
+:root {
+    --theme-color: white;
+    --text-color:black;
+    --base-color: #5E17EB;
+    --dark: #05001B;
+    --light: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* div[id] {
+    scroll-margin-top: 70px;
+    border: 4px solid red;
+} */
+
+/* .observer-root-margin {
+    pointer-events: none;
+    z-index: 1000;
+    border: 4px solid blue;
+    
+    position: fixed;
+    top: 30%;
+    left: 0;
+    right: 0;
+    bottom: 70%;
+} */
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--theme-color);
+    padding-top: 70px;
+}
+
+body {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+body::-webkit-scrollbar {
+    width: 13px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--base-color);
+    border-radius: 10px;
+}
+
+
+a {
+    text-decoration: none;
+    /* color: var(--text-color); */
+    color: var(--light);
+}
+
+.vertical-padding {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.horizontal-padding {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+
+@media (min-width: 950px) {
+    .vertical-padding {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    
+    .horizontal-padding {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+}
